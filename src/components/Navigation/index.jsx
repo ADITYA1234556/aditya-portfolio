@@ -29,7 +29,7 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [badgeIndex, setBadgeIndex] = useState(0);
-  const badges = ['{ DEVOPS }', '{ A.I }', '{ AWS }', '{ AZYURE }', '{ GCP }', '{ DOCKER }', '{ K8S }', '{ CI/CD }'];
+  const badges = ['{ DEVOPS }', '{ A.I }', '{ AWS }', '{ AZURE }', '{ GCP }', '{ DOCKER }', '{ K8S }', '{ CI/CD }'];
 
   // Cycle through badges on interval
   useEffect(() => {

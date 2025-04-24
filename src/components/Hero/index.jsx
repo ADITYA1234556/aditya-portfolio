@@ -21,9 +21,9 @@ const Hero = () => {
 
   // Animated Terminal Prompt
   const terminalMessages = [
-    "git commit -m 'Launching innovation'",
-    "npm run ai",
-    "aws deploy --live",
+    "kubectl run mypod --image=nginx --dry-run=client -o yaml",
+    "terraform state show aws_instance.my_instance",
+    "aws sts get-caller-identity",
   ];
   const [currentTerminal, setCurrentTerminal] = useState(0);
 

@@ -49,7 +49,6 @@ const skillsData = [
       { name: "Python", level: 95 },
       { name: "Java", level: 90 },
       { name: "Node.js", level: 85 },
-      { name: "ReactJS", level: 80 },
       { name: "Go Lang", level: 80 },
       { name: "API Development", level: 90 },
       { name: "Server Management", level: 85 },
