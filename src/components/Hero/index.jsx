@@ -10,7 +10,7 @@ import {
 
 const Hero = () => {
   const iconProps = { size: 24, className: "hero-icon", strokeWidth: 1.5 };
-  const typingTextContent = "Devops, Public Cloud, Private Cloud, Hybrid Cloud solutions, and full-stack development";
+  const typingTextContent = "Devops, Public Cloud, Private Cloud, Hybrid Cloud solutions.";
 
   // Rotating Quotes
   const quotes = [
