@@ -21,7 +21,7 @@ import styled from 'styled-components';
 const projectsData = [
   {
     title: "Personal Website following Production Best Practices",
-    description: "Deployed an production grade set-up using Terraform, AWS, and Gitlab CI/CD following Production best practices.",
+    description: "🚀 Deployed an production grade set-up using Terraform, AWS, and Gitlab CI/CD following Production best practices. 🌐",
     impact: "Full monitoring and alerting",
     tech: ["AWS", "Terraform", "Istio", "Kubernetes", "Python"],
     icon: Cloud,
@@ -29,17 +29,18 @@ const projectsData = [
   },
   {
     title: "Personal AI Chat Assistant",
-    description: "Successfully delivered a Production-Grade Full-stack AI chatbot, built from scratch and deployed on a secure, scalable Kubernetes environment on AWS EKS.",
+    description: "🚀 Successfully delivered a Production-Grade Full-stack AI chatbot, built from scratch and deployed on a secure, scalable Kubernetes environment on AWS EKS. 🌐",
     impact: "My AI Assistant with more relevant and accurate responses",
     tech: ["AWS", "EKS", "Terraform", "React.js", "Node.js", "MongoDB", "Grafana", "Prometheus"],
-    icon: Database
+    icon: Brain,
+    url:"https://www.linkedin.com/posts/aditya-navaneethan-33b999173_devops-aws-terraform-activity-7321095568334675969-hMmo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClCM58BRhNzcIz5AfYbX4DkERvA30CTSL0"
   },
   {
     title: "Multi-Cloud CI/CD Pipeline with AWS and Azure",
     description: "🚀 Implemented Multi-Cloud CI/CD Pipeline (AWS and Azure) with Kubernetes & Security Scanning! 🌐",
     impact: "Enhanced Workflow Efficiency",
     tech: ["AZURE", "GitLab CI", "AWS", "JAVA"],
-    icon: Brain,
+    icon: Database,
     url: "https://www.linkedin.com/posts/aditya-navaneethan-33b999173_devops-ciabrcd-gitlab-activity-7314977182664065024-vb-t?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClCM58BRhNzcIz5AfYbX4DkERvA30CTSL0"
   },
   {
