@@ -16,35 +16,39 @@ import {
   TechStack,
   TechTag
 } from './styles';
+import styled from 'styled-components';
 
 const projectsData = [
   {
-    title: "Enterprise Cloud Platform",
-    description: "Successfully launched and managed an enterprise-level application on AWS, implementing cloud-native solutions and ensuring high availability and scalability.",
-    impact: "Successful AWS Deployment",
-    tech: ["AWS", "Cloud-native", "Docker", "Kubernetes"],
-    icon: Cloud
+    title: "Personal Website following Production Best Practices",
+    description: "Deployed an production grade set-up using Terraform, AWS, and Gitlab CI/CD following Production best practices.",
+    impact: "Full monitoring and alerting",
+    tech: ["AWS", "Terraform", "Istio", "Kubernetes", "Python"],
+    icon: Cloud,
+    url: "https://www.linkedin.com/posts/aditya-navaneethan-33b999173_terraform-aws-eks-activity-7319993302450130944-zErY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClCM58BRhNzcIz5AfYbX4DkERvA30CTSL0"
   },
   {
-    title: "Multi-Cloud Management System",
-    description: "Developing a sophisticated multi-cloud application that functions as a secondary AWS environment, enabling seamless integration and management across multiple cloud platforms.",
-    impact: "Enhanced Cloud Flexibility",
-    tech: ["AWS", "AZURE", "Multi-cloud", "API Development", "Node.js"],
+    title: "Personal AI Chat Assistant",
+    description: "Successfully delivered a Production-Grade Full-stack AI chatbot, built from scratch and deployed on a secure, scalable Kubernetes environment on AWS EKS.",
+    impact: "My AI Assistant with more relevant and accurate responses",
+    tech: ["AWS", "EKS", "Terraform", "React.js", "Node.js", "MongoDB", "Grafana", "Prometheus"],
     icon: Database
   },
   {
-    title: "AI-Powered Developer Assistant",
-    description: "Created an AI-driven assistant to provide real-time support for development tasks and cloud configurations, optimizing team workflows.",
+    title: "Multi-Cloud CI/CD Pipeline with AWS and Azure",
+    description: "🚀 Implemented Multi-Cloud CI/CD Pipeline (AWS and Azure) with Kubernetes & Security Scanning! 🌐",
     impact: "Enhanced Workflow Efficiency",
-    tech: ["Gen AI", "Python", "AWS", "WebSocket"],
-    icon: Brain
+    tech: ["AZURE", "GitLab CI", "AWS", "JAVA"],
+    icon: Brain,
+    url: "https://www.linkedin.com/posts/aditya-navaneethan-33b999173_devops-ciabrcd-gitlab-activity-7314977182664065024-vb-t?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClCM58BRhNzcIz5AfYbX4DkERvA30CTSL0"
   },
   {
-    title: "Development Workflow Optimization",
-    description: "Implemented automated solutions for repetitive tasks, significantly improving development speed and workflow efficiency while reducing debugging time.",
-    impact: "40% Faster Debugging",
-    tech: ["CI/CD", "Docker", "Kubernetes", "FastAPI"],
-    icon: Activity
+    title: "Blue Green Deployment",
+    description: "🚀 Achieving Zero Downtime with Blue-Green Deployment on Kubernetes! 🚀",
+    impact: "99/99% Uptime",
+    tech: ["CI/CD", "Docker", "Kubernetes", "Jenkins"],
+    icon: Activity,
+    url: "https://www.linkedin.com/posts/aditya-navaneethan-33b999173_kubernetes-devops-jenkins-activity-7276557849516752896-QzwK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClCM58BRhNzcIz5AfYbX4DkERvA30CTSL0"
   }
 ];
 
@@ -60,6 +64,17 @@ const cardVariants = {
     }
   })
 };
+
+const ClickableLink = styled.a`
+    color: #61dafb; /* Example color, change as needed */
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: #42a5f5; /* Darker shade on hover */
+    }
+`;
 
 const Projects = () => {
   return (
@@ -118,6 +133,13 @@ const Projects = () => {
                   </TechTag>
                 ))}
               </TechStack>
+              {project.url && (
+                                <p>
+                                    <ClickableLink href={project.url} target="_blank" rel="noopener noreferrer">
+                                        Click Here
+                                    </ClickableLink>
+                                </p>
+                            )}
             </ProjectCard>
           ))}
         </ProjectsGrid>
